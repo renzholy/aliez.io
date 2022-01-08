@@ -82,6 +82,20 @@ const Home: NextPage = () => {
           </span>
         </a>
         <a
+          href="https://orbis.club/profile/did:3:kjzl6cwe1jw145ano7retm9od9zw469abqdmr1xf9e98xfblrumuj4f0fw7l2il"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span className={styles.logo}>
+            <Image
+              src="/orbis.jpg"
+              alt="Orbis Logo"
+              width={139 / 5}
+              height={139 / 5}
+            />
+          </span>
+        </a>
+        <a
           href="https://twitter.com/aliez_eth"
           target="_blank"
           rel="noopener noreferrer"
