@@ -41,7 +41,7 @@ const Home: NextPage = () => {
             className={styles.card}
           >
             <h2>🥃 DRYGIN &rarr;</h2>
-            <p>Ginerate GEN.ART drops w/ custom feeds.</p>
+            <p>Ginerate GEN.ART drops w/ custom hash.</p>
           </a>
 
           <a
