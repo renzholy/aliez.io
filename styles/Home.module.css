@@ -22,6 +22,10 @@
   align-items: center;
 }
 
+.footer a {
+  line-height: 0;
+}
+
 .title a {
   color: #0070f3;
   text-decoration: none;
