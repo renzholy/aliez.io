@@ -40,7 +40,7 @@ const Home: NextPage = () => {
             rel="noopener noreferrer"
             className={styles.card}
           >
-            <h2>🌉 CBA &rarr;</h2>
+            <h2>👀 CBA &rarr;</h2>
             <p>Monitor transfers btw EVM-compatible chains.</p>
           </a>
 
