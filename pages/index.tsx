@@ -88,7 +88,7 @@ const Home: NextPage = () => {
         >
           <span className={styles.logo}>
             <Image
-              src="/orbis.jpg"
+              src="/orbis.png"
               alt="Orbis Logo"
               width={139 / 5}
               height={139 / 5}
