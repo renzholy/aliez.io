@@ -10,7 +10,10 @@ const Home: NextPage = () => {
       <Head>
         <title>A.L.I.E.Z</title>
         <meta name="description" content="A-Z Looser-Krankheit-Was IS das?" />
-        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="icon"
+          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👾</text></svg>"
+        />
       </Head>
 
       <main className={styles.main}>
@@ -28,7 +31,7 @@ const Home: NextPage = () => {
             className={styles.card}
           >
             <h2>🔠 EAP &rarr;</h2>
-            <p>User created ascii art NFT on polygon.</p>
+            <p>Customizable ASCII art NFT on Polygon.</p>
           </a>
 
           <a
@@ -38,7 +41,7 @@ const Home: NextPage = () => {
             className={styles.card}
           >
             <h2>🌉 CBA &rarr;</h2>
-            <p>Monitor cross-chain transfer activities.</p>
+            <p>Monitor transfers btw EVM-compatible chains.</p>
           </a>
 
           <a
@@ -48,7 +51,7 @@ const Home: NextPage = () => {
             className={styles.card}
           >
             <h2>🥃 DRYGIN &rarr;</h2>
-            <p>Generate GEN.ART drops with custom feeds.</p>
+            <p>Generate GEN.ART drops w/ custom feeds.</p>
           </a>
 
           <a
@@ -58,7 +61,7 @@ const Home: NextPage = () => {
             className={styles.card}
           >
             <h2>📡 SCAR &rarr;</h2>
-            <p>An arweave explorer fully onchain.</p>
+            <p>An Arweave explorer on Permaweb.</p>
           </a>
         </div>
       </main>
