@@ -27,7 +27,7 @@ const Home: NextPage = () => {
             rel="noopener noreferrer"
             className={styles.card}
           >
-            <h2>EAP &rarr;</h2>
+            <h2>🔠 EAP &rarr;</h2>
             <p>User created ascii art NFT on polygon.</p>
           </a>
 
@@ -37,7 +37,7 @@ const Home: NextPage = () => {
             rel="noopener noreferrer"
             className={styles.card}
           >
-            <h2>CBA &rarr;</h2>
+            <h2>🌉 CBA &rarr;</h2>
             <p>Monitor cross-chain transfer activities.</p>
           </a>
 
@@ -47,7 +47,7 @@ const Home: NextPage = () => {
             rel="noopener noreferrer"
             className={styles.card}
           >
-            <h2>DRYGIN &rarr;</h2>
+            <h2>🥃 DRYGIN &rarr;</h2>
             <p>Generate GEN.ART drops with custom feeds.</p>
           </a>
 
@@ -57,13 +57,27 @@ const Home: NextPage = () => {
             rel="noopener noreferrer"
             className={styles.card}
           >
-            <h2>SCAR &rarr;</h2>
+            <h2>📡 SCAR &rarr;</h2>
             <p>An arweave explorer fully onchain.</p>
           </a>
         </div>
       </main>
 
       <footer className={styles.footer}>
+        <a
+          href="https://rainbow.me/aliez.eth/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span className={styles.logo}>
+            <Image
+              src="/rainbow.png"
+              alt="Rainbow Logo"
+              width={139 / 5}
+              height={139 / 5}
+            />
+          </span>
+        </a>
         <a
           href="https://twitter.com/aliez_eth"
           target="_blank"
@@ -74,6 +88,20 @@ const Home: NextPage = () => {
               src="/twitter.svg"
               alt="Twitter Logo"
               width={172 / 5}
+              height={139 / 5}
+            />
+          </span>
+        </a>
+        <a
+          href="https://github.com/renzholy/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span className={styles.logo}>
+            <Image
+              src="/github.svg"
+              alt="Github Logo"
+              width={139 / 5}
               height={139 / 5}
             />
           </span>
