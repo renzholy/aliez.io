@@ -74,7 +74,7 @@ const Home: NextPage = () => {
               border: 1px solid #eaeaea;
               border-radius: 10px;
               transition: color 0.15s ease, border-color 0.15s ease;
-              width: 300px;
+              width: 320px;
 
               @media (max-width: 600px) {
                 & {
@@ -128,7 +128,7 @@ const Home: NextPage = () => {
             rel="noopener noreferrer"
           >
             <h2>📡 SCAR &rarr;</h2>
-            <p>An Arweave explorer deployed on Permaweb.</p>
+            <p>Explorer of AR, enduranced on the Permaweb.</p>
           </a>
         </div>
       </main>
