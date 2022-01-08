@@ -128,7 +128,7 @@ const Home: NextPage = () => {
             rel="noopener noreferrer"
           >
             <h2>📡 SCAR &rarr;</h2>
-            <p>Explorer of AR, enduranced on the Permaweb.</p>
+            <p>Explorer of AR, persisted on the Permaweb.</p>
           </a>
         </div>
       </main>
