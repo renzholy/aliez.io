@@ -61,7 +61,7 @@ const Home: NextPage = () => {
             className={styles.card}
           >
             <h2>📡 SCAR &rarr;</h2>
-            <p>An Arweave explorer on Permaweb.</p>
+            <p>An Arweave explorer deployed on Permaweb.</p>
           </a>
         </div>
       </main>
