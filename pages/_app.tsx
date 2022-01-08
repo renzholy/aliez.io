@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         <title>{TITLE}</title>
         <meta name="description" content={DESCRIPTION} />
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content={BASE_URL} />
         <meta name="twitter:title" content={TITLE} />
         <meta name="twitter:description" content={DESCRIPTION} />
