@@ -16,6 +16,7 @@
   background: #fafafa;
   display: flex;
   flex: 1;
+  margin: 0 -2rem;
   padding: 2rem 0;
   border-top: 1px solid #eaeaea;
   justify-content: center;
@@ -104,7 +105,7 @@
 }
 
 .logo {
-  margin: 0 2rem;
+  margin: 0 1.5rem;
 }
 
 @media (max-width: 600px) {
