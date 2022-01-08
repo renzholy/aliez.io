@@ -74,7 +74,7 @@ const Home: NextPage = () => {
               border: 1px solid #eaeaea;
               border-radius: 10px;
               transition: color 0.15s ease, border-color 0.15s ease;
-              width: calc(300px - 2rem);
+              width: 300px;
 
               @media (max-width: 600px) {
                 & {
