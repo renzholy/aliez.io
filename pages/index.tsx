@@ -1,35 +1,111 @@
+import { css } from "@emotion/css";
 import type { NextPage } from "next";
 import Image from "next/image";
 
-import styles from "../styles/Home.module.css";
-
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
-      <main className={styles.main}>
-        <h1 className={styles.title}>A.L.I.E.Z</h1>
-
-        <p className={styles.description}>
-          <code className={styles.code}>a naive developer</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a
-            href="http://eap.wtf/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.card}
+    <div
+      className={css`
+        padding: 0 2rem;
+      `}
+    >
+      <main
+        className={css`
+          min-height: 100vh;
+          padding: 4rem 0;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        `}
+      >
+        <h1
+          className={css`
+            margin: 0;
+            line-height: 1.15;
+            font-size: 4rem;
+            text-align: center;
+          `}
+        >
+          A.L.I.E.Z
+        </h1>
+        <p
+          className={css`
+            margin: 4rem 0;
+            line-height: 1.5;
+            font-size: 1.5rem;
+            text-align: center;
+          `}
+        >
+          <code
+            className={css`
+              background: #fafafa;
+              border-radius: 5px;
+              padding: 0.75rem;
+              font-size: 1.1rem;
+              font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+                DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New,
+                monospace;
+            `}
           >
+            a naive developer
+          </code>
+        </p>
+        <div
+          className={css`
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 800px;
+
+            @media (max-width: 600px) {
+              & {
+                width: 100%;
+                flex-direction: column;
+              }
+            }
+
+            > a {
+              background: #fafafa;
+              margin: 1rem;
+              padding: 1.5rem;
+              text-align: left;
+              color: inherit;
+              text-decoration: none;
+              border: 1px solid #eaeaea;
+              border-radius: 10px;
+              transition: color 0.15s ease, border-color 0.15s ease;
+              max-width: 300px;
+
+              :hover,
+              :focus,
+              :active {
+                color: #0070f3;
+                border-color: #0070f3;
+              }
+
+              > h2 {
+                margin: 0 0 1rem 0;
+                font-size: 1.5rem;
+              }
+
+              > p {
+                color: gray;
+                margin: 0;
+                font-size: 1.25rem;
+                line-height: 1.5;
+              }
+            }
+          `}
+        >
+          <a href="http://eap.wtf/" target="_blank" rel="noopener noreferrer">
             <h2>🔠 EAP &rarr;</h2>
             <p>Customizable ASCII art NFT on Polygon.</p>
           </a>
 
-          <a
-            href="http://cba.is/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.card}
-          >
+          <a href="http://cba.is/" target="_blank" rel="noopener noreferrer">
             <h2>👀 CBA &rarr;</h2>
             <p>Monitor transfers btw EVM-compatible chains.</p>
           </a>
@@ -38,7 +114,6 @@ const Home: NextPage = () => {
             href="https://drygin.xyz/"
             target="_blank"
             rel="noopener noreferrer"
-            className={styles.card}
           >
             <h2>🥃 DRYGIN &rarr;</h2>
             <p>Ginerate GEN.ART drops w/ custom hash.</p>
@@ -48,7 +123,6 @@ const Home: NextPage = () => {
             href="https://scar.pages.dev/"
             target="_blank"
             rel="noopener noreferrer"
-            className={styles.card}
           >
             <h2>📡 SCAR &rarr;</h2>
             <p>An Arweave explorer deployed on Permaweb.</p>
@@ -56,13 +130,32 @@ const Home: NextPage = () => {
         </div>
       </main>
 
-      <footer className={styles.footer}>
+      <footer
+        className={css`
+          background: #fafafa;
+          display: flex;
+          flex: 1;
+          margin: 0 -2rem;
+          padding: 2rem 0;
+          border-top: 1px solid #eaeaea;
+          justify-content: center;
+          align-items: center;
+
+          > a {
+            line-height: 0;
+
+            > span {
+              margin: 0 1.5rem;
+            }
+          }
+        `}
+      >
         <a
           href="https://rainbow.me/aliez.eth/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span className={styles.logo}>
+          <span>
             <Image
               src="/rainbow.png"
               alt="Rainbow Logo"
@@ -76,7 +169,7 @@ const Home: NextPage = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span className={styles.logo}>
+          <span>
             <Image
               src="/orbis.png"
               alt="Orbis Logo"
@@ -90,7 +183,7 @@ const Home: NextPage = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span className={styles.logo}>
+          <span>
             <Image
               src="/twitter.svg"
               alt="Twitter Logo"
@@ -104,7 +197,7 @@ const Home: NextPage = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span className={styles.logo}>
+          <span>
             <Image
               src="/github.svg"
               alt="Github Logo"

@@ -1,13 +1,39 @@
+import { injectGlobal } from "@emotion/css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
-
-import "../styles/globals.css";
 
 const TITLE = "A.L.I.E.Z";
 
 const DESCRIPTION = "a naive developer.";
 
 const BASE_URL = "https://aliez.io/";
+
+injectGlobal`
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;700&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Readex Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+body {
+  background: linear-gradient(90deg, #f6f6f7 28px, transparent 1%) 50%,
+    linear-gradient(#f6f6f7 28px, transparent 1%) 50%, #cbcbcd;
+  background-size: 30px 30px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+`;
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
