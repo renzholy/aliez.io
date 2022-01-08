@@ -4,11 +4,7 @@ import Image from "next/image";
 
 const Home: NextPage = () => {
   return (
-    <div
-      className={css`
-        padding: 0 2rem;
-      `}
-    >
+    <div>
       <main
         className={css`
           min-height: 100vh;
@@ -62,6 +58,7 @@ const Home: NextPage = () => {
 
             @media (max-width: 600px) {
               & {
+                padding: 0 1rem;
                 width: 100%;
                 flex-direction: column;
               }
@@ -77,7 +74,13 @@ const Home: NextPage = () => {
               border: 1px solid #eaeaea;
               border-radius: 10px;
               transition: color 0.15s ease, border-color 0.15s ease;
-              max-width: 300px;
+              width: calc(300px - 2rem);
+
+              @media (max-width: 600px) {
+                & {
+                  width: calc(100% - 2rem);
+                }
+              }
 
               :hover,
               :focus,
@@ -135,7 +138,6 @@ const Home: NextPage = () => {
           background: #fafafa;
           display: flex;
           flex: 1;
-          margin: 0 -2rem;
           padding: 2rem 0;
           border-top: 1px solid #eaeaea;
           justify-content: center;
